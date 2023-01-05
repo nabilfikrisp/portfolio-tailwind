@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="dist/css/output.css" />
   </head>
 
   <body class="bg-base">
@@ -42,36 +42,61 @@
 
             <nav
               id="nav-menu"
-              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
             >
               <ul class="block lg:flex">
                 <li class="group">
                   <a
                     href="#home"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >Home</a
                   >
                 </li>
                 <li class="group">
                   <a
-                    href="#home"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    href="#about"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >About Me</a
                   >
                 </li>
                 <li class="group">
                   <a
-                    href="#home"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    href="#contact"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >Contacts</a
                   >
                 </li>
                 <li class="group">
                   <a
-                    href="#home"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    href="#portfolio"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >Portfolio</a
                   >
+                </li>
+                <li class="group flex items-center pl-8 mt-3 lg:mt-0">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500 dark:text-white"
+                      >light</span
+                    >
+                    <input
+                      type="checkbox"
+                      name=""
+                      id="dark-toggle"
+                      class="hidden"
+                    />
+                    <label for="dark-toggle">
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                      >
+                        <div
+                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-500 ease-in-out"
+                        ></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500 dark:text-white"
+                      >dark</span
+                    >
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -82,19 +107,24 @@
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
+          <div class="w-full self-center px-4 lg:w-1/2 relative z-20 mb-10 lg:mb-0">
             <h1 class="text-base font-semibold text-primary md:text-2xl">
               Hello 👋, I'm
-              <span class="mt-1 block text-4xl font-bold text-dark lg:text-5xl"
+              <span
+                class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl"
                 >Nabil Fikri</span
               >
             </h1>
-            <h2 class="mb-5 text-lg font-medium text-slate-500 lg:text-2xl">
+            <h2
+              class="mb-5 text-lg font-medium text-slate-500 dark:text-slate-300 lg:text-2xl"
+            >
               Student at Teknik Informatika
-              <span class="text-dark">Universitas Padjadjaran</span>
+              <span class="text-dark dark:text-white"
+                >Universitas Padjadjaran</span
+              >
             </h2>
             <div
               id="quote"
@@ -117,10 +147,10 @@
               <img
                 src="dist/img/profile.png"
                 alt="Nabil Fikri"
-                class="mx-auto max-w-full"
+                class="relative z-10 mx-auto max-w-full"
               />
               <span
-                class="md:bottom-280 absolute bottom-10 left-1/2 -z-10 -translate-x-1/2 md:scale-125"
+                class="md:bottom-280 absolute lg:bottom-10 -bottom-5 left-1/2 -translate-x-1/2 md:scale-125"
               >
                 <svg
                   viewBox="0 0 200 200"
@@ -143,7 +173,7 @@
     <!-- Hero Seciton End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="mb-10 w-full px-4 lg:w-1/2">
@@ -152,20 +182,28 @@
             >
               About Me
             </h4>
-            <h2 class="mb-5 text-base font-medium text-secondary lg:text-lg">
+            <h2
+              class="mb-5 text-base font-medium text-secondary dark:text-white lg:text-lg"
+            >
               I am a curious learner seeking for new knowledge to move forward,
               open up new doors, and do new things. I am currently interested in
-              <span class="font-bold text-secondary">Web Development</span> and
-              <span class="font-bold text-secondary">Self Improvement</span>.
-              I'm currently seeking for an internship to enhance my experience
-              in the industry.
+              <span class="font-bold text-secondary dark:text-primary"
+                >Web Development</span
+              >
+              and
+              <span class="font-bold text-secondary dark:text-primary"
+                >Self Improvement</span
+              >. I'm currently seeking for an internship to enhance my
+              experience in the industry.
             </h2>
           </div>
           <div class="w-full px-4 lg:flex lg:w-1/2 lg:flex-col">
             <h3 class="mb-6 text-lg font-bold text-primary lg:text-xl">
               Let's connect
             </h3>
-            <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
+            <p
+              class="mb-6 text-base font-medium text-secondary dark:text-white lg:text-lg"
+            >
               I'm always open to making new connections and building
               relationships, so let's connect and see how we can help each other
               out!
@@ -175,7 +213,7 @@
               <a
                 href="https://github.com/nabilfikrisp"
                 target="_blank"
-                class="flex h-9 w-9 items-center justify-center rounded-full border border-secondary transition-all duration-300 ease-in-out hover:bg-primary hover:bg-opacity-90 hover:text-white"
+                class="flex h-9 w-9 items-center justify-center rounded-full border border-secondary transition-all duration-300 ease-in-out hover:bg-primary hover:bg-opacity-90 hover:text-white dark:text-white dark:hover:text-dark"
               >
                 <svg
                   aria-hidden="true"
@@ -197,7 +235,7 @@
               <a
                 href="https://www.instagram.com/micanskuy"
                 target="_blank"
-                class="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:bg-primary hover:bg-opacity-90 hover:text-white"
+                class="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:bg-primary hover:bg-opacity-90 hover:text-white dark:text-white dark:hover:text-dark"
               >
                 <svg
                   role="img"
@@ -216,7 +254,7 @@
               <a
                 href="https://www.linkedin.com/in/mnabilfikrisp/"
                 target="_blank"
-                class="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:bg-primary hover:bg-opacity-90 hover:text-white"
+                class="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:bg-primary hover:bg-opacity-90 hover:text-white dark:text-white dark:hover:text-dark"
               >
                 <svg
                   role="img"
@@ -235,7 +273,7 @@
               <a
                 href="https://api.whatsapp.com/send?phone=6281296446465"
                 target="_blank"
-                class="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:bg-primary hover:bg-opacity-90 hover:text-white"
+                class="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:bg-primary hover:bg-opacity-90 hover:text-white dark:text-white dark:hover:text-dark"
               >
                 <svg
                   role="img"
@@ -257,13 +295,13 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start -->
-    <section id="portfolio" class="w-full bg-slate-100 pt-20 pb-32">
+    <section id="portfolio" class="w-full bg-slate-100 pt-20 pb-32 dark:bg-slate-600">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
-            <h2 class="mb-4 text-3xl font-bold text-dark">My Projects</h2>
-            <p class="text-md font-medium text-secondary">
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white">My Projects</h2>
+            <p class="text-md font-medium text-secondary dark:text-slate-300">
               I am always looking for new opportunities to take on exciting and
               challenging projects, and I am committed to delivering
               high-quality work that meets the needs of my clients.
@@ -372,13 +410,13 @@
     <!-- Portfolio Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="pb-36 pt-32">
+    <section id="contact" class="pb-36 pt-32 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
-            <h2 class="mb-4 text-3xl font-bold text-dark">Contact Me</h2>
-            <p class="text-md font-medium text-secondary">
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white">Contact Me</h2>
+            <p class="text-md font-medium text-secondary dark:text-slate-300">
               If you have any questions or would like to discuss a potential
               project, please don't hesitate to contact me. I'm always happy to
               connect and see how I can help.
@@ -574,6 +612,29 @@
       </div>
     </footer>
     <!-- Footer Section End -->
+
+    <!-- Back to Top Start -->
+    <a
+      href="#home"
+      class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 rounded-xl border-b-8 border-r-4 border-indigo-600 bg-primary p-4 text-white hover:animate-pulse"
+      id="to-top"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6 fill-current"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75"
+        />
+      </svg>
+    </a>
+    <!-- Back to Top End -->
     <script src="dist/js/script.js"></script>
   </body>
 </html>
