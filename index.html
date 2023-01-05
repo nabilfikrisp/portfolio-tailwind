@@ -1,361 +1,579 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
 
-  <link rel="stylesheet" href="dist/output.css">
-</head>
-
-<body class="bg-base ">
-  <!-- Header Start -->
-  <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10" id="navbar">
-    <div class="container">
-      <div class="flex items-center justify-between relative">
-        <div class="px-4" id="logo">
-          <a href="#home" class="font-bold text-lg text-primary block py-6">Nabil Fikri </a>
-        </div>
-        <div class="flex items-center justify-center px-4">
-          <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-            <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
-            <span class="hamburger-line transition duration-300 ease-in-out"></span>
-            <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
-          </button>
-
-          <nav id="nav-menu"
-            class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
-            <ul class="block lg:flex">
-              <li class="group">
-                <a href="#home" class="text-base text-dark py-2 flex mx-8 group-hover:text-primary">Home</a>
-              </li>
-              <li class="group">
-                <a href="#home" class="text-base text-dark py-2 flex mx-8 group-hover:text-primary">About Me</a>
-              </li>
-              <li class="group">
-                <a href="#home" class="text-base text-dark py-2 flex mx-8 group-hover:text-primary">Contacts</a>
-              </li>
-              <li class="group">
-                <a href="#home" class="text-base text-dark py-2 flex mx-8 group-hover:text-primary">Portfolio</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- Header End -->
-
-  <!-- Hero Section Start -->
-  <section id="home" class="pt-36 ">
-    <div class="container">
-      <div class="flex flex-wrap">
-        <div class="w-full self-center px-4 lg:w-1/2">
-          <h1 class="text-base font-semibold text-primary md:text-2xl">Hello 👋, I'm <span
-              class="block font-bold text-dark text-4xl lg:text-5xl mt-1">Nabil Fikri</span></h1>
-          <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text-2xl">Student at Teknik Informatika <span
-              class="text-dark">Universitas
-              Padjadjaran</span></h2>
-          <div id="quote"
-            class="bg-violet-200 w-fit rounded-md px-4 py-3 mb-10 border-b-8 border-violet-300 border-l-4">
-            <p class="font-medium text-slate-500 leading-relaxe ">
-              “Your brain is for having ideas, not for holding them.”
-            </p>
-            <span class="text-slate-600 font-bold ml-2">David Allen</span>
-          </div>
-
-
-          <a href="#"
-            class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:opacity-80 transition duration-300 ease-in-out border-b-8 border-indigo-600">Contact
-            Me</a>
-        </div>
-        <div class="w-full self-end px-4 lg:w-1/2">
-          <div class="mt-10 relative lg:mt-0 lg:right-0">
-            <img src="dist/img/profile.png" alt="Nabil Fikri" class="max-w-full mx-auto">
-            <span class="absolute bottom-10 -z-10 left-1/2 -translate-x-1/2 md:scale-125 md:bottom-280">
-              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="400" height="400">
-                <path fill="#6366F1"
-                  d="M31.6,-55.8C41.1,-49.3,49.1,-41.1,58.3,-31.5C67.5,-21.9,77.9,-11,80.3,1.4C82.7,13.7,77.1,27.5,69,39.1C61,50.7,50.6,60.2,38.7,64.4C26.8,68.6,13.4,67.6,1.2,65.5C-11,63.5,-22,60.3,-33.6,55.9C-45.2,51.5,-57.3,45.8,-63.5,36.3C-69.6,26.8,-69.7,13.4,-72,-1.3C-74.3,-16.1,-78.9,-32.1,-73.1,-42.1C-67.2,-52.1,-50.9,-56,-37,-60C-23,-63.9,-11.5,-68,-0.2,-67.6C11.1,-67.2,22.1,-62.4,31.6,-55.8Z"
-                  transform="translate(100 100) translate(1.1)" />
-              </svg>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Hero Seciton End -->
-
-  <!-- About Section Start -->
-  <section id="about" class="pt-36 pb-32">
-    <div class="container">
-      <div class="flex flex-wrap">
-        <div class="w-full px-4 mb-10 lg:w-1/2">
-          <h4 class="font-bold uppercase text-primary text-lg mb-3 lg:text-xl lg:mb-6">About Me</h4>
-          <h2 class="font-medium text-secondary text-base mb-5 lg:text-lg">I am a curious learner seeking for new
-            knowledge to move
-            forward, open up new doors, and do new things. I
-            am
-            currently interested in <span class="text-secondary font-bold">Web Development</span> and <span
-              class="text-secondary font-bold">Self Improvement</span>. I'm currently
-            seeking for an internship to
-            enhance my experience in the industry.</h2>
-        </div>
-        <div class="w-full px-4 lg:w-1/2 lg:flex lg:flex-col">
-          <h3 class="font-bold text-primary text-lg lg:text-xl mb-6">Let's connect</h3>
-          <p class="font-medium text-base text-secondary mb-6 lg:text-lg">I'm always open to making new connections and
-            building relationships, so let's connect and see how we can help each other out!</p>
-          <div class="flex items-center lg:justify-center gap-3">
-            <!-- Github -->
-            <a href="https://github.com/nabilfikrisp" target="_blank"
-              class="w-9 h-9 rounded-full flex justify-center items-center border border-secondary hover:bg-primary hover:bg-opacity-90 hover:text-white transition-all duration-300 ease-in-out">
-              <svg aria-hidden="true" class="octicon octicon-mark-github fill-current" height="30" version="1.1"
-                viewBox="0 0 16 16" width="30">
-                <title>Github</title>
-                <path fill-rule="evenodd"
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
-                </path>
-              </svg>
-            </a>
-
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/micanskuy" target="_blank"
-              class="w-9 h-9 rounded-full flex justify-center items-center hover:bg-primary hover:bg-opacity-90 hover:text-white transition-all duration-300 ease-in-out">
-              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
-                <title>Instagram</title>
-                <path
-                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
-              </svg>
-            </a>
-
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/mnabilfikrisp/" target="_blank"
-              class="w-9 h-9 rounded-full flex justify-center items-center hover:bg-primary hover:bg-opacity-90 hover:text-white transition-all duration-300 ease-in-out">
-              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
-                <title>LinkedIn</title>
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
-            </a>
-
-            <!-- WhatsApp -->
-            <a href="https://api.whatsapp.com/send?phone=6281296446465" target="_blank"
-              class="w-9 h-9 rounded-full flex justify-center items-center hover:bg-primary hover:bg-opacity-90 hover:text-white transition-all duration-300 ease-in-out">
-              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
-                <title>WhatsApp</title>
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-              </svg>
+  <body class="bg-base">
+    <!-- Header Start -->
+    <header
+      class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent"
+      id="navbar"
+    >
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4" id="logo">
+            <a href="#home" class="block py-6 text-lg font-bold text-primary"
+              >Nabil Fikri
             </a>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- About Section End -->
-
-  <!-- Portfolio Section Start -->
-  <section id="portfolio" class="pt-20 pb-32 w-full bg-slate-100">
-    <div class="container">
-      <div class="w-full px-4">
-        <div class="max-w-xl mx-auto text-center mb-16">
-          <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-          <h2 class="font-bold text-3xl text-dark mb-4">My Projects</h2>
-          <p class="font-medium text-md text-secondary">I am always looking for new opportunities to take on exciting
-            and challenging projects, and I am committed to delivering high-quality work that meets the needs of my
-            clients.</p>
-        </div>
-      </div>
-
-      <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto  pt-4 gap-x-4">
-        <!-- 1st projects -->
-        <div
-          class="mb-6 p-4 md:w-5/12 bg-violet-200 border-b-8 border-violet-300 border-l-4 rounded-lg hover:scale-105 transition duration-300 ease-in-out shadow-lg">
-          <div class="rounded-md shadow-md overflow-hidden">
-            <a href="https://www.behance.net/gallery/160336405/Unpad-Awards-2022-Website">
-              <img src="dist/img/portfolio/1.jpg" alt="Unpad Awards" width="w-full">
-            </a>
-          </div>
-          <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Unpad Awards Website</h3>
-          <p class="font-medium text-base text-secondary">
-            Unpad Awards is one of the work programs carried out by the BEM
-            Kema Unpad as a form of appreciation for all the performances and works produced by student institutions.
-          </p>
-        </div>
-        <!-- 2nd projects -->
-        <div
-          class="mb-6 p-4 md:w-5/12 bg-violet-200 border-b-8 border-violet-300 border-l-4 rounded-lg hover:scale-105 transition duration-300 shadow-lg">
-          <div class="rounded-md shadow-md overflow-hidden">
-            <a href="https://github.com/nabilfikrisp/project-kithara-1">
-              <img src="dist/img/portfolio/2.jpg" alt="Kithara" width="w-full">
-            </a>
-          </div>
-          <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Kithara Online Store</h3>
-          <p class="font-medium text-base text-secondary">
-            Kithara is an online web store that provide a service for fixing a guitar.
-          </p>
-        </div>
-        <!-- 3rd projects -->
-        <div
-          class="mb-6 p-4 md:w-5/12 bg-violet-200 border-b-8 border-violet-300 border-l-4 rounded-lg hover:scale-105 transition duration-300 shadow-lg">
-          <div class="rounded-md shadow-md overflow-hidden ">
-            <a href="https://www.freecodecamp.org/certification/nabilfikrisp/responsive-web-design">
-              <img src="dist/img/portfolio/3.jpg" alt="Technical Documentation" width="w-full">
-            </a>
-          </div>
-          <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Documentation Page</h3>
-
-          <p class="font-medium text-base text-secondary">
-            This is a documentation page that I build for completing freeCodeCamp web responsive certification.
-          </p>
-        </div>
-        <!-- 4th projects -->
-        <div
-          class="mb-6 p-4 md:w-5/12 bg-violet-200 border-b-8 border-violet-300 border-l-4 rounded-lg hover:scale-105 transition duration-300 shadow-lg">
-          <div class="rounded-md shadow-md overflow-hidden">
-            <a href="https://www.freecodecamp.org/certification/nabilfikrisp/responsive-web-design">
-              <img src="dist/img/portfolio/4.jpg" alt="Landing Page" width="w-full">
-            </a>
-          </div>
-          <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Landing Page</h3>
-          <p class="font-medium text-base text-secondary">
-            This is a dlanding page that I build for completing freeCodeCamp web responsive certification.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Portfolio Section End -->
-
-  <!-- Contact Section Start -->
-  <section id="contact" class="pb-36 pt-32">
-    <div class="container">
-      <div class="w-full px-4">
-        <div class="max-w-xl mx-auto text-center mb-16">
-          <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
-          <h2 class="font-bold text-3xl text-dark mb-4">Contact Me</h2>
-          <p class="font-medium text-md text-secondary">If you have any questions or would like to discuss a potential project, please don't hesitate to contact me. I'm always happy to connect and see how I can help.</p>
-        </div>
-      </div>
-
-      <form action="">
-        <div class="lg:w-3/4 mx-auto w-full">
-          <div class="w-full pb-8 mt4">
-            <label for="name" class="text-base font-bold text-primary">Name</label>
-            <input type="text" id="name"
-              class="w-full bg-slate-200 text-dark rounded-md py-2 px-3 focus:outline-none focus:ring-1 focus:ring-primary">
-          </div>
-          <div class="w-full pb-8 mt4">
-            <label for="email" class="text-base font-bold text-primary">Email</label>
-            <input type="email" id="email"
-              class="w-full bg-slate-200 text-dark rounded-md py-2 px-3 focus:outline-none focus:ring-1 focus:ring-primary">
-          </div>
-          <div class="w-full pb-8 mt4">
-            <label for="message" class="text-base font-bold text-primary">Message</label>
-            <textarea id="message"
-              class="w-full bg-slate-200 text-dark rounded-md py-2 px-3 focus:outline-none focus:ring-1 focus:ring-primary h-32"></textarea>
-          </div>
-          <div class="w-full">
+          <div class="flex items-center justify-center px-4">
             <button
-              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:opacity-80 transition duration-300 ease-in-out border-b-8 border-indigo-600 w-full lg:w-1/2 lg:mx-auto lg:block">Send</button>
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute right-4 block lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >About Me</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >Contacts</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >Portfolio</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
-        </div>
-
-      </form>
-    </div>
-  </section>
-  <!-- Contact Section End -->
-
-  <!-- Footer Section Start -->
-  <footer class="bg-indigo-900 pt-24 pb-10">
-    <div class="container">
-      <div class="flex flex-col">
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/2">
-            <h2 class="font-bold text-2xl text-white mb-3">Contact Me</h2>
-            <p class="mb-2">mnabilfikrisp@gmail.com</p>
-            <p class="mb-2">Jl.Cicukang No.50</p>
-            <p class="mb-2">Bandung</p>
-          </div>
-
-          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/2">
-            <h3 class="font-bold text-2xl mb-2 text-white">Links</h3>
-            <ul>
-              <li>
-                <a href="#home" class="inline-block text-base hover:text-pink-400 mb-3">Home</a>
-              </li>
-              <li>
-                <a href="#about" class="inline-block text-base hover:text-pink-400 mb-3">About Me</a>
-              </li>
-              <li>
-                <a href="#portfolio" class="inline-block text-base hover:text-pink-400 mb-3">Portfolio</a>
-              </li>
-              <li>
-                <a href="#contact" class="inline-block text-base hover:text-pink-400 mb-3">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-
-
-        <div class="w-full pt-10 border-t border-violet-300 px-4">
-          <div class="flex items-center justify-center gap-3 text-white">
-            <!-- Github -->
-            <a href="https://github.com/nabilfikrisp" target="_blank"
-              class="w-9 h-9 rounded-full flex justify-center items-center border border-secondary hover:bg-white hover:bg-opacity-90 hover:text-primary transition-all duration-300 ease-in-out">
-              <svg aria-hidden="true" class="octicon octicon-mark-github fill-current" height="30" version="1.1"
-                viewBox="0 0 16 16" width="30">
-                <title>Github</title>
-                <path fill-rule="evenodd"
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
-                </path>
-              </svg>
-            </a>
-
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/micanskuy" target="_blank"
-              class="w-9 h-9 rounded-full flex justify-center items-center hover:bg-white hover:bg-opacity-90 hover:text-primary transition-all duration-300 ease-in-out">
-              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
-                <title>Instagram</title>
-                <path
-                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
-              </svg>
-            </a>
-
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/mnabilfikrisp/" target="_blank"
-              class="w-9 h-9 rounded-full flex justify-center items-center hover:bg-white hover:bg-opacity-90 hover:text-primary transition-all duration-300 ease-in-out">
-              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
-                <title>LinkedIn</title>
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
-            </a>
-
-            <!-- WhatsApp -->
-            <a href="https://api.whatsapp.com/send?phone=6281296446465" target="_blank"
-              class="w-9 h-9 rounded-full flex justify-center items-center hover:bg-white hover:bg-opacity-90 hover:text-primary transition-all duration-300 ease-in-out">
-              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
-                <title>WhatsApp</title>
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="w-full text-violet-200 text-md px-4 pt-4 text-center">
-          <h2>Created with 💗 by <a href="https://www.instagram.com/micanskuy/"
-              class="font-bold text-pink-300 transition duration-300 hover:text-white">Nabil Fikri</a></h2>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- Footer Section End -->
-  <script src="dist/js/script.js"></script>
-</body>
+    </header>
+    <!-- Header End -->
 
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-2xl">
+              Hello 👋, I'm
+              <span class="mt-1 block text-4xl font-bold text-dark lg:text-5xl"
+                >Nabil Fikri</span
+              >
+            </h1>
+            <h2 class="mb-5 text-lg font-medium text-slate-500 lg:text-2xl">
+              Student at Teknik Informatika
+              <span class="text-dark">Universitas Padjadjaran</span>
+            </h2>
+            <div
+              id="quote"
+              class="mb-10 w-fit rounded-md border-b-8 border-l-4 border-violet-300 bg-violet-200 px-4 py-3"
+            >
+              <p class="leading-relaxe font-medium text-slate-500">
+                “Your brain is for having ideas, not for holding them.”
+              </p>
+              <span class="ml-2 font-bold text-slate-600">David Allen</span>
+            </div>
+
+            <a
+              href="#"
+              class="rounded-full border-b-8 border-indigo-600 bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80"
+              >Contact Me</a
+            >
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:right-0 lg:mt-0">
+              <img
+                src="dist/img/profile.png"
+                alt="Nabil Fikri"
+                class="mx-auto max-w-full"
+              />
+              <span
+                class="md:bottom-280 absolute bottom-10 left-1/2 -z-10 -translate-x-1/2 md:scale-125"
+              >
+                <svg
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="400"
+                  height="400"
+                >
+                  <path
+                    fill="#6366F1"
+                    d="M31.6,-55.8C41.1,-49.3,49.1,-41.1,58.3,-31.5C67.5,-21.9,77.9,-11,80.3,1.4C82.7,13.7,77.1,27.5,69,39.1C61,50.7,50.6,60.2,38.7,64.4C26.8,68.6,13.4,67.6,1.2,65.5C-11,63.5,-22,60.3,-33.6,55.9C-45.2,51.5,-57.3,45.8,-63.5,36.3C-69.6,26.8,-69.7,13.4,-72,-1.3C-74.3,-16.1,-78.9,-32.1,-73.1,-42.1C-67.2,-52.1,-50.9,-56,-37,-60C-23,-63.9,-11.5,-68,-0.2,-67.6C11.1,-67.2,22.1,-62.4,31.6,-55.8Z"
+                    transform="translate(100 100) translate(1.1)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Seciton End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="mb-10 w-full px-4 lg:w-1/2">
+            <h4
+              class="mb-3 text-lg font-bold uppercase text-primary lg:mb-6 lg:text-xl"
+            >
+              About Me
+            </h4>
+            <h2 class="mb-5 text-base font-medium text-secondary lg:text-lg">
+              I am a curious learner seeking for new knowledge to move forward,
+              open up new doors, and do new things. I am currently interested in
+              <span class="font-bold text-secondary">Web Development</span> and
+              <span class="font-bold text-secondary">Self Improvement</span>.
+              I'm currently seeking for an internship to enhance my experience
+              in the industry.
+            </h2>
+          </div>
+          <div class="w-full px-4 lg:flex lg:w-1/2 lg:flex-col">
+            <h3 class="mb-6 text-lg font-bold text-primary lg:text-xl">
+              Let's connect
+            </h3>
+            <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
+              I'm always open to making new connections and building
+              relationships, so let's connect and see how we can help each other
+              out!
+            </p>
+            <div class="flex items-center gap-3 lg:justify-center">
+              <!-- Github -->
+              <a
+                href="https://github.com/nabilfikrisp"
+                target="_blank"
+                class="flex h-9 w-9 items-center justify-center rounded-full border border-secondary transition-all duration-300 ease-in-out hover:bg-primary hover:bg-opacity-90 hover:text-white"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="octicon octicon-mark-github fill-current"
+                  height="30"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="30"
+                >
+                  <title>Github</title>
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  ></path>
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/micanskuy"
+                target="_blank"
+                class="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:bg-primary hover:bg-opacity-90 hover:text-white"
+              >
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/mnabilfikrisp/"
+                target="_blank"
+                class="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:bg-primary hover:bg-opacity-90 hover:text-white"
+              >
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current"
+                >
+                  <title>LinkedIn</title>
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+
+              <!-- WhatsApp -->
+              <a
+                href="https://api.whatsapp.com/send?phone=6281296446465"
+                target="_blank"
+                class="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:bg-primary hover:bg-opacity-90 hover:text-white"
+              >
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current"
+                >
+                  <title>WhatsApp</title>
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="w-full bg-slate-100 pt-20 pb-32">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
+            <h2 class="mb-4 text-3xl font-bold text-dark">My Projects</h2>
+            <p class="text-md font-medium text-secondary">
+              I am always looking for new opportunities to take on exciting and
+              challenging projects, and I am committed to delivering
+              high-quality work that meets the needs of my clients.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex w-full flex-wrap justify-center gap-x-4 px-4 pt-4 xl:mx-auto xl:w-10/12"
+        >
+          <!-- 1st projects -->
+          <div
+            class="mb-6 rounded-lg border-b-8 border-l-4 border-violet-300 bg-violet-200 p-4 shadow-lg transition duration-300 ease-in-out hover:scale-105 md:w-5/12"
+          >
+            <div class="overflow-hidden rounded-md shadow-md">
+              <a
+                href="https://www.behance.net/gallery/160336405/Unpad-Awards-2022-Website"
+              >
+                <img
+                  src="dist/img/portfolio/1.jpg"
+                  alt="Unpad Awards"
+                  width="w-full"
+                />
+              </a>
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+              Unpad Awards Website
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              Unpad Awards is one of the work programs carried out by the BEM
+              Kema Unpad as a form of appreciation for all the performances and
+              works produced by student institutions.
+            </p>
+          </div>
+          <!-- 2nd projects -->
+          <div
+            class="mb-6 rounded-lg border-b-8 border-l-4 border-violet-300 bg-violet-200 p-4 shadow-lg transition duration-300 hover:scale-105 md:w-5/12"
+          >
+            <div class="overflow-hidden rounded-md shadow-md">
+              <a href="https://github.com/nabilfikrisp/project-kithara-1">
+                <img
+                  src="dist/img/portfolio/2.jpg"
+                  alt="Kithara"
+                  width="w-full"
+                />
+              </a>
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+              Kithara Online Store
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              Kithara is an online web store that provide a service for fixing a
+              guitar.
+            </p>
+          </div>
+          <!-- 3rd projects -->
+          <div
+            class="mb-6 rounded-lg border-b-8 border-l-4 border-violet-300 bg-violet-200 p-4 shadow-lg transition duration-300 hover:scale-105 md:w-5/12"
+          >
+            <div class="overflow-hidden rounded-md shadow-md">
+              <a
+                href="https://www.freecodecamp.org/certification/nabilfikrisp/responsive-web-design"
+              >
+                <img
+                  src="dist/img/portfolio/3.jpg"
+                  alt="Technical Documentation"
+                  width="w-full"
+                />
+              </a>
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+              Documentation Page
+            </h3>
+
+            <p class="text-base font-medium text-secondary">
+              This is a documentation page that I build for completing
+              freeCodeCamp web responsive certification.
+            </p>
+          </div>
+          <!-- 4th projects -->
+          <div
+            class="mb-6 rounded-lg border-b-8 border-l-4 border-violet-300 bg-violet-200 p-4 shadow-lg transition duration-300 hover:scale-105 md:w-5/12"
+          >
+            <div class="overflow-hidden rounded-md shadow-md">
+              <a
+                href="https://www.freecodecamp.org/certification/nabilfikrisp/responsive-web-design"
+              >
+                <img
+                  src="dist/img/portfolio/4.jpg"
+                  alt="Landing Page"
+                  width="w-full"
+                />
+              </a>
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+              Landing Page
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              This is a dlanding page that I build for completing freeCodeCamp
+              web responsive certification.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pb-36 pt-32">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
+            <h2 class="mb-4 text-3xl font-bold text-dark">Contact Me</h2>
+            <p class="text-md font-medium text-secondary">
+              If you have any questions or would like to discuss a potential
+              project, please don't hesitate to contact me. I'm always happy to
+              connect and see how I can help.
+            </p>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="mx-auto w-full lg:w-3/4">
+            <div class="mt-4 w-full pb-8">
+              <label for="name" class="text-base font-bold text-primary"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="w-full rounded-md bg-slate-200 py-2 px-3 text-dark focus:outline-none focus:ring-1 focus:ring-primary"
+              />
+            </div>
+            <div class="mt4 w-full pb-8">
+              <label for="email" class="text-base font-bold text-primary"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="w-full rounded-md bg-slate-200 py-2 px-3 text-dark focus:outline-none focus:ring-1 focus:ring-primary"
+              />
+            </div>
+            <div class="mt4 w-full pb-8">
+              <label for="message" class="text-base font-bold text-primary"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                class="h-32 w-full rounded-md bg-slate-200 py-2 px-3 text-dark focus:outline-none focus:ring-1 focus:ring-primary"
+              ></textarea>
+            </div>
+            <div class="w-full">
+              <button
+                class="w-full rounded-full border-b-8 border-indigo-600 bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 lg:mx-auto lg:block lg:w-1/2"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="bg-indigo-900 pt-24 pb-10">
+      <div class="container">
+        <div class="flex flex-col">
+          <div class="flex flex-wrap">
+            <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/2">
+              <h2 class="mb-3 text-2xl font-bold text-white">Contact Me</h2>
+              <p class="mb-2">mnabilfikrisp@gmail.com</p>
+              <p class="mb-2">Jl.Cicukang No.50</p>
+              <p class="mb-2">Bandung</p>
+            </div>
+
+            <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/2">
+              <h3 class="mb-2 text-2xl font-bold text-white">Links</h3>
+              <ul>
+                <li>
+                  <a
+                    href="#home"
+                    class="mb-3 inline-block text-base hover:text-pink-400"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="mb-3 inline-block text-base hover:text-pink-400"
+                    >About Me</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#portfolio"
+                    class="mb-3 inline-block text-base hover:text-pink-400"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="mb-3 inline-block text-base hover:text-pink-400"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="w-full border-t border-violet-300 px-4 pt-10">
+            <div class="flex items-center justify-center gap-3 text-white">
+              <!-- Github -->
+              <a
+                href="https://github.com/nabilfikrisp"
+                target="_blank"
+                class="flex h-9 w-9 items-center justify-center rounded-full border border-secondary transition-all duration-300 ease-in-out hover:bg-white hover:bg-opacity-90 hover:text-primary"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="octicon octicon-mark-github fill-current"
+                  height="30"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="30"
+                >
+                  <title>Github</title>
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  ></path>
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/micanskuy"
+                target="_blank"
+                class="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:bg-white hover:bg-opacity-90 hover:text-primary"
+              >
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/mnabilfikrisp/"
+                target="_blank"
+                class="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:bg-white hover:bg-opacity-90 hover:text-primary"
+              >
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current"
+                >
+                  <title>LinkedIn</title>
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+
+              <!-- WhatsApp -->
+              <a
+                href="https://api.whatsapp.com/send?phone=6281296446465"
+                target="_blank"
+                class="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:bg-white hover:bg-opacity-90 hover:text-primary"
+              >
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current"
+                >
+                  <title>WhatsApp</title>
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="text-md w-full px-4 pt-4 text-center text-violet-200">
+            <h2>
+              Created with 💗 by
+              <a
+                href="https://www.instagram.com/micanskuy/"
+                class="font-bold text-pink-300 transition duration-300 hover:text-white"
+                >Nabil Fikri</a
+              >
+            </h2>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+    <script src="dist/js/script.js"></script>
+  </body>
 </html>
